@@ -1,0 +1,64 @@
+<div fxLayout="column">
+    <div class="photo-row">
+        <div class="instagram-badge">
+            <svg style="width:36px;height:36px; position: absolute; top: 2.5px; right: 105px;" viewBox="0 0 24 24">
+                <path fill="#ffffff" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"
+                />
+            </svg>
+            <a style="color: white; font-size: 21px; position: absolute; top: 5px; right: 5px;" href="https://www.instagram.com/explore/tags/hotdogs/">
+                #hotdogs
+            </a>
+        </div>
+        <img src="../../../assets/images/hd1.png">
+        <img src="../../../assets/images/hd2.png">
+        <img src="../../../assets/images/hd3.png">
+        <img src="../../../assets/images/hd4.png">
+        <img src="../../../assets/images/hd1.png">
+        <img src="../../../assets/images/hd2.png">
+    </div>
+    <div class="photo-row" fxHide [fxShow.gt-md]="true">
+        <img src="../../../assets/images/hd5.png">
+        <img src="../../../assets/images/hd6.png">
+        <img src="../../../assets/images/hd7.png">
+        <img src="../../../assets/images/hd8.png">
+        <img src="../../../assets/images/hd5.png">
+        <img src="../../../assets/images/hd6.png">
+    </div>
+</div>
+<div class="nav-bar" fxLayout="row" fxLayoutGap="8px" fxLayoutAlign="center center" [ngStyle.xs]="{'height.px': 48}" [ngStyle.gt-xs]="{'height.px': 64}"
+    [ngStyle.gt-md]="{'height.px': 100}">
+    <div [fxFlex.gt-xs]="10" fxHide [fxShow.gt-xs]="true"></div>
+    <div [fxFlex.gt-xs]="80" [fxFlex.xs]="100" fxLayout="row" fxLayoutAlign="space-around center">
+        <a class="header-text" ngClass.xs="xs" ngClass.sm="sm" ngClass.md="md" ngClass.gt-md="gt-md" style="text-decoration: none;"
+            [routerLink]="['/menu']" routerLinkActive="active">
+            MENU
+        </a>
+        <a class="header-text" ngClass.xs="xs" ngClass.sm="sm" ngClass.md="md" ngClass.gt-md="gt-md" style="text-decoration: none;"
+            [routerLink]="['/catering']" routerLinkActive="active">
+            CATERING
+        </a>
+        <a class="header-text" ngClass.xs="xs" ngClass.sm="sm" ngClass.md="md" ngClass.gt-md="gt-md" style="text-decoration: none;"
+            [routerLink]="['/about-us']" routerLinkActive="active">
+            ABOUT US
+        </a>
+        <a class="header-text" ngClass.xs="xs" ngClass.sm="sm" ngClass.md="md" ngClass.gt-md="gt-md" style="text-decoration: none;"
+            [routerLink]="['/contact']" routerLinkActive="active">
+            CONTACT
+        </a>
+    </div>
+    <div [fxFlex.gt-xs]="10" fxHide [fxShow.gt-xs]="true"></div>
+</div>
+<router-outlet></router-outlet>
+<div fxLayout="row" fxLayoutAlign="start center" [ngStyle.xs]="{'height.px': 36, 'font-size.px': 10}" [ngStyle.gt-xs]="{'height.px': 48, 'font-size.px': 12}"
+    [ngStyle.gt-md]="{'height.px': 75, 'font-size.px': 19}" style="padding: 0 8px; background-color: #efefef; color:#555559; font-weight: 400;">
+    <div>2018 Dirty Dogs all rights reserved</div>
+    <div fxFlex fxLayout.xs="column-reverse" fxLayout.sm="column-reverse" fxLayout.gt-sm="row" fxLayoutAlign.xs="center end"
+        fxLayoutAlign.sm="center end" fxLayoutAlign.gt-sm="end center">274 Marconi Blvd. Columbus, Ohio 43215
+        <span fxHide [fxShow.gt-sm]="true">&nbsp;|&nbsp;</span>
+        <a style="text-decoration: none;" href="tel:{{6145380095}}">614.538.0095</a>
+        <span fxHide [fxShow.gt-sm]="true">&nbsp;|&nbsp;</span>
+        <a style="text-decoration: none;" [routerLink]="['/contact']" routerLinkActive="active">
+            Contact Us
+        </a>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    margin: 0;
+    height: 100%;
+}
+body {
+     height: 100%;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0px;
+ }
+
+// Fonts
+
+.title-text {
+    text-align: center;
+    font-weight: 600;
+    color: #555559;
+}
+.title-text.xs {
+    font-size: 32px;
+}
+.title-text.sm {
+    font-size: 48px;
+}
+.title-text.md {
+    font-size: 64px;
+}
+.title-text.gt-md {
+    font-size: 75px;
+}
+
+.header-text {
+    font-weight: 700;
+    color: #555559;
+}
+.header-text.xs {
+    font-size: 14px;
+}
+.header-text.sm {
+    font-size: 21px;
+}
+.header-text.md {
+    font-size: 28px;
+}
+.header-text.gt-md {
+    font-size: 32px;
+}
+
+.detail-text {
+    padding-top: 20px;
+    font-weight: 300;
+    color:  #555559;
+}
+.detail-text.xs {
+    font-size: 12.5px;
+}
+.detail-text.sm {
+    font-size: 16px;
+}
+.detail-text.md {
+    font-size: 21px;
+}
+.detail-text.gt-md {
+    font-size: 24px;
+}
+
+// Buttons
+.primary-btn {
+    margin: 60px 0;
+    outline: none;
+    height: 65px;
+    color: #4F8298;
+    background-color: rgba(40, 103, 130, 0.12);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.primary-btn.xs {
+    font-size: 18px;
+}
+.primary-btn.sm {
+    font-size: 22px;
+}
+.primary-btn.gt-sm {
+    font-size: 26px;
+}
+
+.primary-btn:hover {
+    box-shadow: 0px 1px 18px 0px rgba(black, 0.12), 0px 6px 10px 0px rgba(black, 0.14), 0px 3px 5px -1px rgba(black, 0.2);
+    border-color: #286782;
+    color: #286782;
+}
+
+a {
+    cursor: pointer !important;
+    text-decoration: none !important;
+    color: rgba(46,46,46, 0.75);
+}
+a:hover,
+a:focus {
+    cursor: pointer !important;
+    text-decoration: none !important;
+    color: rgba(46,46,46, 1);
+}

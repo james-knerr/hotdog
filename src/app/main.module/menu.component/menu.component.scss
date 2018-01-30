@@ -1,0 +1,25 @@
+@import '../main.styles.scss';
+
+.bullet:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -60px;
+    font-weight: 700;
+    color: #4F8298;
+}
+.bullet.xs:before {
+    font-size: 14px;
+}
+.bullet.sm:before {
+    font-size: 21px;
+}
+.bullet.md:before {
+    font-size: 28px;
+}
+.bullet.gt-md:before {
+    font-size: 32px;
+}
+
+.image-section {
+    padding: 20px;
+}
