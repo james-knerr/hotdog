@@ -1,4 +1,4 @@
-# Hotddog
+# Hot Dog
 
 This is a sample responsive hot dog website based on a mockup image available at https://github.com/Dynamit/front-end-code-day/tree/master/hotdog
 
